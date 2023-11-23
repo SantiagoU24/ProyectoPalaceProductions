@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/img/Logo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="/static/css/register.css">
+</head>
+
+<body>
+
+    
+    <form class="formulario"  method="POST" action="/registro">
+
+        <h1>Registrate</h1>
+        <div class="input-contenedor">
+            <i class="fas fa-user icon"></i>
+            <input type="text" placeholder="Nombre completo" pattern="[A-Za-z\s]+" title="Ingrese solo letras y espacios" required name = "txtNombre">
+        </div>
+        
+        <div class="input-contenedor">
+            <i class="fas fa-user icon"></i>
+            <input type="text" placeholder="Apellidos" pattern="[A-Za-z\s]+" title="Ingrese solo letras y espacios" required name  = "txtApellido">
+        </div>
+        <div class="input-contenedor">
+            <input type="text" placeholder="Correo" required name  = "txtCorreo">
+        </div>
+        <div class="input-contenedor">
+            <i class="fas fa-user icon"></i>
+            <input type="text" placeholder="Tipo Documento" pattern="[A-Za-z\s]+" title="Ingrese solo letras y numeros" required name  = "txtTipoDoc">
+        </div>
+        
+        
+        <div class="input-contenedor">
+            <i class="fas fa-id-card icon"></i>
+            <input type="text" placeholder="Número de documento" pattern="[0-9]+" title="Ingrese solo números" required name = "txtNumeroDocumento">
+        </div>
+        
+        <div class="input-contenedor">
+            <i class="fas fa-calendar icon"></i>
+            <input type="date" placeholder="Fecha de nacimiento" name="txtFechaNacimiento">
+        </div>
+        
+        <div class="input-contenedor">
+            <i class="fas fa-phone icon"></i>
+            <input type="tel" placeholder="Celular" pattern="[0-9]+" title="Ingrese solo números" required name = "txtNumeroTelefono">
+        </div>
+        <div class="input-contenedor">
+            <i class="fas fa-user icon"></i>
+            <input type="text" placeholder="Contraseña" title="Ingrese solo letras y numeros" required name  = "txtPassword">
+        </div>
+        
+            <input type="submit" value="Registrarme" class="button">
+            <p>Al registrarte aceptas los términos y condiciones</p>
+            <p>¿Ya tienes cuenta?  <a class="link" href="/login">Iniciar Sesión</a></p>
+        </div>
+    </form>
+</body>
+</html>
